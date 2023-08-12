@@ -1,0 +1,105 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    justify-content: space-between;
+}
+
+.row > * {  /* Selecciona todos los hijos directos de .row */
+    flex: 1;  /* Permite que los elementos crezcan y se repartan el espacio disponible */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 1px;
+}
+
+/* Para dcc.Dropdown */
+.Select, .Select-control, .Select-value, .Select-input, .Select-menu-outer {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    max-width: 100%;
+}
+
+.dropdown-container-1 {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-right: 0px;
+    padding: 2px;
+    margin-left: 2px;
+    padding-left: 14px;
+    background-color: white;
+
+}
+
+.dropdown-container-2 {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-right: 0px;
+    padding: 2px;
+    margin-left: 2px;
+    background-color: white;
+}
+
+#well-map-container {
+    height: 78vh; /* ajusta este valor según tus necesidades */
+}
+
+#well-map {
+    height: 100%;
+}
+
+.graph-title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold; /* Si quieres que el título sea en negrita */
+    padding: 0px;
+    margin-top: 2px; 
+    margin-bottom: 8px;
+    margin-left: 10px;
+    background-color: white;
+    /* Puedes agregar otras propiedades aquí si lo necesitas */
+}
+
+#well-map-container {
+    border: 1px solid #ccc;
+    margin-left: 2px;
+    margin-top: 2px;
+    padding: 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#graph-container, #graph-container_2 {
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    margin-top: 2px;    
+    padding: 1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* Para selector de tipo de mapa */
+#mapbox-view-selector label {
+    margin-top: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 10px;
+}
+
+/* Para selector de fechas */
+#date-picker-range .DateInput_input {
+    margin-top: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+   /* background-color: lightgray;*/
+}
