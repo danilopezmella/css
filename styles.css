@@ -47,7 +47,7 @@
 }
 
 #well-map-container {
-    height: 90vh; /* ajusta este valor según tus necesidades */
+    height: 90vh; /* ajusta este valor segÃºn tus necesidades */
 }
 
 #well-map {
@@ -56,13 +56,13 @@
 
 .graph-title {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: bold; /* Si quieres que el título sea en negrita */
+    font-weight: bold; /* Si quieres que el tÃ­tulo sea en negrita */
     padding: 0px;
     margin-top: 2px; 
     margin-bottom: 8px;
     margin-left: 10px;
     background-color: white;
-    /* Puedes agregar otras propiedades aquí si lo necesitas */
+    /* Puedes agregar otras propiedades aquÃ­ si lo necesitas */
 }
 
 #well-map-container {
@@ -74,6 +74,7 @@
 }
 
 #graph-container, #graph-container_2 {
+    height: 45vh;
     border: 1px solid #ccc;
     margin-left: 5px;
     margin-top: 2px;    
