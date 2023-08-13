@@ -1,3 +1,45 @@
+/* Estilos para el overlay (fondo oscurecido) */
+.overlay {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Fijo en la ventana */
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad */
+    z-index: 1000; /* Asegurarse de que aparezca encima de otros elementos */
+}
+
+.overlay.show-modal {
+    display: block; /* Mostrar cuando se añada la clase show-modal */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Fijo en la ventana */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste para centrar perfectamente */
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    z-index: 10001; /* Asegurarse de que aparezca encima del overlay y otros elementos */
+    width: 70%; /* Toma el 70% del ancho de la ventana */
+    max-width: 500px; /* Ancho máximo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra alrededor del modal */
+    text-align: justify;
+    font-size: 14px;  /* Ajusta este valor según lo que necesites para el contenido */
+}
+
+.modal.show-modal {
+    display: block; /* Mostrar cuando se añada la clase show-modal */
+}
+
+#close-modal-btn {
+    margin-top: 20px;  /* Ajusta este valor según cuánto espacio quieras agregar */
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -47,7 +89,7 @@
 }
 
 #well-map-container {
-    height: 90vh; /* ajusta este valor segÃºn tus necesidades */
+    height: 90vh; /* ajusta este valor según tus necesidades */
 }
 
 #well-map {
@@ -56,13 +98,13 @@
 
 .graph-title {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: bold; /* Si quieres que el tÃ­tulo sea en negrita */
+    font-weight: bold; /* Si quieres que el título sea en negrita */
     padding: 0px;
     margin-top: 2px; 
     margin-bottom: 8px;
     margin-left: 10px;
     background-color: white;
-    /* Puedes agregar otras propiedades aquÃ­ si lo necesitas */
+    /* Puedes agregar otras propiedades aquí si lo necesitas */
 }
 
 #well-map-container {
@@ -103,3 +145,4 @@ body {
     color: rgb(0, 0, 0);
     background-color: rgb(225, 225, 225);
 }
+
